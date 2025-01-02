@@ -1,0 +1,104 @@
+# Same as V1 but gives output as a json
+# We provide a sample json output to GPT 
+
+#Outcome: GPT can provide a json for easy parsing.
+
+
+
+"I am attaching a CV for analysis. Review it for errors and improvement opportunities based on the following categories and mistake types.
+
+Categories and Mistake Types:
+Spelling and Grammar
+
+Spelling mistakes
+Grammar mistakes
+Use of punctuation should be consistent
+ATS Friendliness
+
+Headings that sound too complicated. Should be simple.
+Structure of the CV is not consistent
+Date formats are not consistent
+Dates should be in reverse chronological
+File name should be reasonable
+Avoid using a lot of abbreviations or complex words
+Avoid use of buzzwords
+Clarity and Simplicity
+
+Sentences are too complicated and can be simplified
+Sentences are too long
+Professional Structure
+
+Font of the CV is too small or large. Should be 10 pts.
+Font used in the CV is not professional. Should be Arial, Calibri, or Times.
+Space wastage in resume
+Focus and Impact
+
+Should be using active and not passive voice
+There are no numbers mentioned for impact
+Repetition of the same verbs. A verb should not be repeated more than 3 times.
+Use of weak verbs like worked
+Do not use responsibility-oriented language like ""responsible for."" Make them accomplishment-oriented.
+Relevance and Conciseness
+
+Summary, if included, should not be more than 4 lines or 150 words.
+Do not include sections like objective and references.
+Length and Balance
+
+Length of the CV is too small (less than one page) or too long (more than 2 pages).
+Expected Output:
+The output should be a JSON object grouped by categories, then by mistake types, with details for each mistake. Each mistake includes:
+
+Details: A description of the mistake, including specific examples from the CV.
+Recommendation: Actionable advice or steps to fix the mistake.
+Example JSON Format:
+json
+Copy code
+{
+  ""Spelling and Grammar"": {
+    ""Spelling Mistakes"": [
+      {
+        ""details"": ""The word 'proffesional' is misspelled; it should be 'professional.'"",
+        ""recommendation"": ""Use a spell-check tool to review the document.""
+      }
+    ],
+    ""Grammar Mistakes"": [
+      {
+        ""details"": ""Incorrect subject-verb agreement in the sentence 'He have managed projects.'"",
+        ""recommendation"": ""Change 'have' to 'has' to correct the grammar.""
+      }
+    ],
+    ""Punctuation Consistency"": [
+      {
+        ""details"": ""Inconsistent use of Oxford commas in the list: 'managed, developed, and executed projects.'"",
+        ""recommendation"": ""Ensure consistent use of commas throughout the CV.""
+      }
+    ]
+  },
+  ""ATS Friendliness"": {
+    ""Complicated Headings"": [
+      {
+        ""details"": ""The heading 'Personal Chronology' is unclear."",
+        ""recommendation"": ""Simplify the heading to 'Work Experience.'""
+      }
+    ],
+    ""Inconsistent Structure"": [
+      {
+        ""details"": ""Bullet points are indented inconsistently in the 'Skills' section."",
+        ""recommendation"": ""Ensure consistent indentation and alignment throughout.""
+      }
+    ]
+  },
+  ""Clarity and Simplicity"": {
+    ""Complicated Sentences"": [
+      {
+        ""details"": ""The sentence 'Leveraged multi-faceted frameworks to ideate innovative solutions' is overly complex."",
+        ""recommendation"": ""Simplify the sentence to 'Developed innovative solutions using established frameworks.'""
+      }
+    ]
+  }
+}
+Additional Notes:
+Include all identified mistakes in the nested JSON format.
+Capture multiple occurrences of the same mistake type, each with unique details.
+Ensure the details field includes specific examples from the CV, and the recommendation field provides actionable advice."
+

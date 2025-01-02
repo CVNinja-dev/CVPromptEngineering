@@ -1,0 +1,66 @@
+# V1
+# Testing out prompt structures
+# Gives output in table
+# Example provided to GPT for better understanding
+
+#Outcome: GPT can learn the sample mistakes provided and accurately detect them.
+
+
+"I am attaching a CV for analysis. Review it for errors and improvement opportunities based on the following categories and mistake types.
+
+Categories and Mistake Types:
+Spelling and Grammar
+
+Spelling mistakes
+Grammar mistakes
+Use of punctuation should be consistent
+ATS Friendliness
+
+Headings that sound too complicated. Should be simple.
+Structure of the CV is not consistent
+Date formats are not consistent
+Dates should be in reverse chronological
+File name should be reasonable
+Avoid using a lot of abbreviations or complex words
+Avoid use of buzzwords
+Clarity and Simplicity
+
+Sentences are too complicated and can be simplified
+Sentences are too long
+Professional Structure
+
+Font of the CV is too small or large. Should be 10 pts.
+Font used in the CV is not professional. Should be Arial, Calibri, or Times.
+Space wastage in resume
+Focus and Impact
+
+Should be using active and not passive voice
+There are no numbers mentioned for impact
+Repetition of the same verbs. A verb should not be repeated more than 3 times.
+Use of weak verbs like worked
+Do not use responsibility-oriented language like ""responsible for."" Make them accomplishment-oriented.
+Relevance and Conciseness
+
+Summary, if included, should not be more than 4 lines or 150 words.
+Do not include sections like objective and references.
+Length and Balance
+
+Length of the CV is too small (less than one page) or too long (more than 2 pages).
+Expected Output:
+The response should be presented in a tabular format with the following columns:
+
+Group Name: The category of the mistake (e.g., Spelling and Grammar, ATS Friendliness).
+Mistake: A short description of the issue (e.g., ""Spelling error"").
+Mistake Details: Detailed explanation or context of the issue, including specific examples from the CV.
+Recommendation: Actionable advice or steps to fix the issue.
+Example Table Format:
+Group Name	Mistake	Mistake Details	Recommendation
+Spelling and Grammar	Spelling error	The word ""proffesional"" is misspelled; it should be ""professional.""	Use a spell-check tool to review the document.
+ATS Friendliness	Complicated heading	The section heading ""Personal Chronology"" should be simplified to ""Work Experience.""	Rename the heading to ""Work Experience.""
+Focus and Impact	No numbers for impact	The achievement ""Improved sales"" lacks quantifiable details.	Include measurable results, e.g., ""Increased sales by 20%.""
+Length and Balance	CV is too long	The CV is three pages, which exceeds the standard length.	Condense it to a maximum of two pages.
+Additional Notes:
+Capture all instances of each mistake, even if there are multiple occurrences of the same type.
+Provide specific examples from the CV for each mistake in the Mistake Details column.
+Ensure that every row includes actionable advice in the Recommendation column."
+
